@@ -12,7 +12,7 @@
     <form action="adduser" method="post">
         @csrf
         <div class="input-wrapper">
-            <input type="text" placeholder="Enter your name" name="username">
+            <input type="text" placeholder="Enter your name" value="{{old('username')}}" name="username">
             <br>
             <span style="color: brown">@error('username'){{$message}}@enderror</span>
         </div>

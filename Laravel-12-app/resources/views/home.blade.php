@@ -33,13 +33,13 @@
 
 <!-- <h1>{{rand()}}</h1> -->
 
-@if($name == 'waqas')
+<!-- @if($name == 'waqas')
     <h2>this is waqas</h2>
 @elseif($name == 'ahmad')
     <h2>this is ahmad</h2>
 @else
     <h2>other user</h2>
-@endif
+@endif -->
 
 
 <div>

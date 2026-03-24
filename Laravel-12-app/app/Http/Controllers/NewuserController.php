@@ -11,8 +11,12 @@ class NewuserController extends Controller
 $request->validate([
     'username' => 'required | min:4 | max:10',
     'email' => 'required | email',
-    'city' => 'required | max:10',
+    'city' => 'required | max:10 | uppercase',
     'skills' => 'required',
+], [
+    'username.required' => 'User field can not be empty',
+
+    'city.uppercase' => 'city should be in uppercase only',
 ]);
 
 return $request;
